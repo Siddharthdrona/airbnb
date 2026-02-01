@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb Home</title>
+  <link rel="stylesheet" href="/output.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-red-600">Airbnb</div>
+      
+      <!-- Navigation Links -->
+      <nav class="flex gap-6 items-center">
+        <a href="#" class="text-gray-600 hover:text-gray-900">Places to stay</a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">Experiences</a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">Online Experiences</a>
+      </nav>
+
+      <!-- Buttons -->
+      <div class="flex gap-3">
+        <a href="#" class="px-4 py-2 rounded-full border border-gray-200 hover:bg-gray-100">
+          Log in
+        </a>
+        <a href="#" class="px-4 py-2 rounded-full bg-red-600 text-white hover:bg-red-700">
+          Sign up
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="relative bg-linear-to-br from-red-100 to-white">
+      <div class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+        
+        <!-- Hero Text -->
+        <div class="space-y-6">
+          <h1 class="text-5xl font-bold text-gray-900">
+            Find your next stay
+          </h1>
+          <p class="text-lg text-gray-600">
+            Discover unique homes, experiences, and places around the world.
+          </p>
+
+          <!-- Search Bar -->
+          <div class="flex gap-3 items-center">
+            <input
+              type="text"
+              placeholder="Where are you going?"
+              class="flex-1 px-4 py-3 rounded-full border border-gray-200 focus:outline-none"
+            />
+            <button class="px-6 py-3 rounded-full bg-red-600 text-white hover:bg-red-700">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-md rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&w=800&q=80"
+                 alt="Beautiful home"
+                 class="w-full h-72 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold mb-6">Popular nearby</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" class="w-full h-44 object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Cozy Apartment</h3>
+            <p class="text-gray-600 mt-1">In the heart of the city.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1505691723518-36a1b8a6f2d5?auto=format&fit=crop&w=800&q=80" class="w-full h-44 object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Beach House</h3>
+            <p class="text-gray-600 mt-1">Relax by the sea.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="w-full h-44 object-cover">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Mountain Cabin</h3>
+            <p class="text-gray-600 mt-1">A quiet escape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
