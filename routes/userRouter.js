@@ -8,7 +8,7 @@ const { registeredHomes } = require('./hostRouter');
 
 
 userRouter.get('/', (req, res, next)=>{
-
+  console.log('Registered Homes:', registeredHomes);
   res.sendFile(path.join(rootDir, 'views', 'home.html' ));
 })
 
